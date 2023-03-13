@@ -80,9 +80,9 @@ $regexPattern = "^.*?($dbPrefix)(_db_|_tlog_).*(\.$fileExt)$"
 $regexPatternForFirstArchive = "^.*?($dbPrefix)(_db_|_tlog_).*(\.BAK.$fileExt.001)$"
 $regexMatchOptions = [System.Text.RegularExpressions.RegexOptions] 'IgnoreCase'
 
-$smtpServer = "mail.mfrb.by"
+$smtpServer = ""
 $smtpPort = 25
-$mailFrom = $env:computername + "@mfrb.by"
+$mailFrom = $env:computername + ""
 
 Function SendToEmail([string] $from, [string] $to, [string] $subject, [string] $body)
 {
